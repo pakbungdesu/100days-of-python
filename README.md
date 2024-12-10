@@ -16,6 +16,8 @@ Day 25: [US Game](https://github.com/pakbungdesu/100days-of-python/tree/master/D
 
 Day 28: [Pomodoro](https://github.com/pakbungdesu/100days-of-python/tree/master/Day28) - Effective way to focus on your tasks, split it to small 25 minutes
 
+Day 29: [Password manager](https://github.com/pakbungdesu/100days-of-python/tree/master/Day29) - A personl manager, help to securely store and manage your password
+
 
 <h2>How to Use:</h2>
 
