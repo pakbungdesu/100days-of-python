@@ -1,0 +1,8 @@
+Hi Pakbung!
+
+    The International Space Station has just flown over your continent
+    at [datetime]. At the coordinates ([latitude], [longitude])
+    I just tell you in case, you may use these figures
+    to perform calculations for buying a lottery ticket!
+
+Love you, as always <3
