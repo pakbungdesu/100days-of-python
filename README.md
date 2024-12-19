@@ -16,11 +16,13 @@ Day 25: [US Game](https://github.com/pakbungdesu/100days-of-python/tree/master/D
 
 Day 28: [Pomodoro](https://github.com/pakbungdesu/100days-of-python/tree/master/Day28) - Effective way to focus on your tasks, split it to small 25 minutes
 
-Day 29: [Password manager](https://github.com/pakbungdesu/100days-of-python/tree/master/Day29) - A personl manager, help to securely store and manage your password
+Day 29: [Password Manager](https://github.com/pakbungdesu/100days-of-python/tree/master/Day29) - A personl manager, help to securely store and manage your password
 
 Day 31: [Flashcard](https://github.com/pakbungdesu/100days-of-python/tree/master/Day31) - A tool for helping you prepare Japanese Language Proficiency Test (N5)
 
 Day 33: [ISS Notifier](https://github.com/pakbungdesu/100days-of-python/tree/master/Day33) - Spot the ISS with email notifications!
+
+Day 34: [API Quiz Brain](https://github.com/pakbungdesu/100days-of-python/tree/master/Day34) - Sharpen your wit by trivia questions
 
 
 <h2>How to Use:</h2>
