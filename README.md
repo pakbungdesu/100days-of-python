@@ -18,6 +18,10 @@ Day 28: [Pomodoro](https://github.com/pakbungdesu/100days-of-python/tree/master/
 
 Day 29: [Password manager](https://github.com/pakbungdesu/100days-of-python/tree/master/Day29) - A personl manager, help to securely store and manage your password
 
+Day 31: [Flashcard](https://github.com/pakbungdesu/100days-of-python/tree/master/Day31) - A tool for helping you prepare Japanese Language Proficiency Test (N5)
+
+Day 33: [ISS Notifier](https://github.com/pakbungdesu/100days-of-python/tree/master/Day33) - Spot the ISS with email notifications!
+
 
 <h2>How to Use:</h2>
 
