@@ -5,13 +5,8 @@ import datetime as dt
 
 
 # -------------------- CONSTANT ------------------- #
-<<<<<<< HEAD
 MY_LAT = 15.870032  # you can custom latitude and longitude here
 MY_LONG = 100.992541
-=======
-MY_LAT = 34.0479  # Custom latitude and longitude here
-MY_LONG = -168.0621
->>>>>>> cda2af1102e9909ee211f29b2eaf6a254659eff9
 MY_EMAIL = "example1@gmail.com"
 MY_PASSWORD = "insert_app_password_here"
 TO_EMAIL = "example2@gmail.com"

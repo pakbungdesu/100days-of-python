@@ -18,12 +18,11 @@ class QuizBrain:
         return output
 
     def check_answer(self, user_answer):
-        """Check answer and return a complete text for printing scores"""
+        """Check answer and return a result and complete text for printing scores"""
         correct_answer = self.current_question.answer
+        result = 0
         if user_answer.lower() == correct_answer.lower():
             self.score += 1
-            print("You got it right!")
-        else:
-            print("That's wrong.")
+            result = 1
 
-        return f"{self.score}/{self.question_number}"
+        return [result, f"{self.score}/{self.question_number}"]
