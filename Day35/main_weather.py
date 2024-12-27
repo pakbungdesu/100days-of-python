@@ -22,7 +22,7 @@ if res.status_code == requests.codes.ok:
     data = res.json()
     data = data["list"][0:4]
     data = [int(ele["weather"][0]["id"]) for ele in data]
-    if data[3] > 800:
+    if 200 < data[3] < 600:
         will_rain = True
 
 if will_rain:
