@@ -7,18 +7,15 @@ class QuizBrain:
         self.output = None
 
     def still_has_questions(self):
-        """Check if there are questions remaining"""
         return self.question_number < len(self.question_list)
 
     def next_question(self):
-        """Move on to the next question and return a complete text for printing on canvas"""
         self.current_question = self.question_list[self.question_number]
         output = f"Q.{self.question_number + 1}: {self.current_question.text}"
         self.question_number += 1
         return output
 
     def check_answer(self, user_answer):
-        """Check answer and return a result and complete text for printing scores"""
         correct_answer = self.current_question.answer
         result = 0
         if user_answer.lower() == correct_answer.lower():

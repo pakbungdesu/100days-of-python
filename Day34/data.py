@@ -2,6 +2,8 @@
 import requests
 import html
 
+# request random question category for 10 questions
+# question type: boolean (yes/no answer)
 parameters = {
     "amount": 10,
     "type": "boolean"

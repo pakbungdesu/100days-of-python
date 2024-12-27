@@ -14,12 +14,10 @@ class QuizInterface:
         self.wrong_img = None
 
     def set_window(self, title, pdx, pdy, theme):
-        """Set up the window"""
         self.window.title(title)
         self.window.config(padx=pdx, pady=pdy, background=theme)
 
     def set_canvas(self, wd, ht, bg, highlight=0):
-        """Set up the canvas"""
         self.canvas = Canvas(width=wd, height=ht, background=bg, highlightthickness=highlight)
         self.canvas.grid(row=1, column=0, columnspan=2)
 
@@ -36,12 +34,10 @@ class QuizInterface:
         self.score_label.grid(row=0, column=1)
 
     def write_canvas(self, x, y, w, txt, color, fnt):
-        """Clear the canvas and write new text on it."""
         self.canvas.delete("all")  # Clears everything on the canvas
         self.txt = self.canvas.create_text(x, y, text=txt, width=w, fill=color, font=fnt)
 
     def set_button(self, right_file, wrong_file, right_cmd, left_cmd, highlight=0):
-        """Set up the buttons"""
         self.right_img = PhotoImage(file=right_file)  # Store as an instance variable
         self.wrong_img = PhotoImage(file=wrong_file)  # Store as an instance variable
 
@@ -52,5 +48,4 @@ class QuizInterface:
         self.wrong.grid(row=3, column=1)
 
     def run(self):
-        """ Call this method at the end to start the Tkinter event loop. """
         self.window.mainloop()

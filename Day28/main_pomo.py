@@ -70,10 +70,13 @@ def count_down(minute):
 
 # ---------------------------- UI SETUP ------------------------------- #
 
+# Window
 window = Tk()
 window.title("Pomodoro")
 window.config(padx=80, pady=40, background=BLUE)
 
+
+# Label, Canvas
 title_label = Label(text="Timer", fg=YELLOW, bg=BLUE, font=(FONT_NAME, 35, "bold"))
 title_label.grid(column=1, row=0)
 
@@ -89,6 +92,8 @@ canvas.grid(column=1, row=2)
 blank2 = Label(text="blank2", fg=BLUE, bg=BLUE, font=(FONT_NAME, 20))
 blank2.grid(column=1, row=3)
 
+
+# Button
 start_button = Button(text="Start", width=6, height=2, highlightthickness=0, command=start_timer)
 start_button.grid(column=0, row=4)
 
@@ -97,6 +102,5 @@ reset_button.grid(column=2, row=4)
 
 check_marks = Label(fg=YELLOW, bg=BLUE)
 check_marks.grid(column=1, row=4)
-
 
 window.mainloop()

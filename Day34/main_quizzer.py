@@ -17,19 +17,16 @@ FONT_NAME = "Arial"
 
 # ------------------ UI PART ---------------------- #
 def handle_true():
-    """Handle the True button click."""
     user_answer = "True"
     check_answer(user_answer)
 
 
 def handle_false():
-    """Handle the False button click."""
     user_answer = "False"
     check_answer(user_answer)
 
 
 def check_answer(user_answer):
-    """Check if the user's answer is correct."""
     results = quiz.check_answer(user_answer)
     ui.write_score_label(THEME_COLOR, WHITE, results[1], FONT_NAME, 10)
 
@@ -48,7 +45,6 @@ def check_answer(user_answer):
 
 
 def show_final_message():
-    """Show the final completion message."""
     final_txt = f"Quiz Complete! Your final score was: {quiz.score}/{quiz.question_number}"
     ui.set_canvas(300, 250, WHITE)  # Reset the canvas one last time
     ui.write_canvas(150, 125, 280, final_txt, BLACK, FONT)
@@ -59,7 +55,6 @@ def show_final_message():
 
 
 def next_question():
-    """Load the next question onto the UI canvas."""
     text = quiz.next_question()
     ui.write_canvas(150, 125, 280, text, BLACK, FONT)
 
