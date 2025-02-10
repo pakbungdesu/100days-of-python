@@ -24,6 +24,8 @@ Day 33: [ISS Notifier](https://github.com/pakbungdesu/100days-of-python/tree/mas
 
 Day 34: [API Quiz Brain](https://github.com/pakbungdesu/100days-of-python/tree/master/Day34) - Sharpen your wit by trivia questions
 
+Day 35: [Rain SMS Alert](https://github.com/pakbungdesu/100days-of-python/tree/master/Day35) - Send SMS, if there will rain in the next 12 hours!
+
 
 <h2>How to Use:</h2>
 
