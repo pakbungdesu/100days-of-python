@@ -1,39 +1,61 @@
+"""
+Rain Alert Notifier
+Fetches a 12-hour weather forecast using the OpenWeatherMap API.
+If rain is detected (based on Weather Condition IDs), it sends an SMS
+notification to the user via the Twilio API.
+"""
 
 import requests
 from twilio.rest import Client
 
-endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "your_api_key"
+# --- Configuration & API Setup ---
+ENDPOINT = "https://api.openweathermap.org/data/2.5/forecast"
+API_KEY = "your_api_key"
 
-# Custom your latitude and longitude here
-lat = 14.020100
-lon = 100.523567
+# Twilio Credentials
+ACCOUNT_SID = "your_id"
+AUTH_TOKEN = "your_token"
+
+# Custom coordinates (Latitude/Longitude)
+LAT = 14.020100
+LON = 100.523567
 
 params = {
-    "lat": lat,
-    "lon": lon,
-    "appid": api_key
+    "lat": LAT,
+    "lon": LON,
+    "appid": API_KEY,
+    "cnt": 4,  # Optional: Limit results to the next 4 timestamps (12 hours)
 }
 
-res = requests.get(endpoint, params=params)
+# --- Data Fetching ---
+res = requests.get(ENDPOINT, params=params)
 will_rain = False
 
 if res.status_code == requests.codes.ok:
     data = res.json()
-    data = data["list"][0:4]
-    data = [int(ele["weather"][0]["id"]) for ele in data]
-    if 200 < data[3] < 600:
-        will_rain = True
 
+    # The API returns forecasts in 3-hour increments.
+    # data["list"][0:4] captures the next 12 hours of weather.
+    forecast_list = data["list"][0:4]
+
+    # Weather Condition Codes (e.g., 2xx = Thunderstorm, 5xx = Rain)
+    # Using list comprehension to extract the 'id' for each 3-hour block
+    weather_ids = [int(hour_data["weather"][0]["id"]) for hour_data in forecast_list]
+
+    # Logic: If any ID is between 200 and 600, it indicates rain or storm
+    for code in weather_ids:
+        if code < 700:  # 200-600 codes specifically represent rain/snow/storms
+            will_rain = True
+            break
+
+# --- SMS Notification ---
 if will_rain:
-    account_sid = "your_id"
-    auth_token = "your_token"
-    client = Client(account_sid, auth_token)
+    client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
     message = client.messages.create(
-        body="There will rain in the next 12 hours in your area. Don't forget to bring an umbrella",
+        body="It's going to rain in the next 12 hours. ☔ Don't forget an umbrella!",
         from_="from_number",
         to="to_number",
     )
 
-    print(message.body)
+    print(f"Notification Sent: {message.status}")
