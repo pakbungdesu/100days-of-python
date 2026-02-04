@@ -46,10 +46,7 @@ Once the machine starts, you can interact with it using the following commands:
 **off:** Shuts down the machine and ends the program.
 
 ## 👌🏼 Example Interaction
-<video width="640" height="360" controls>
-<source src="coffee_machine.mp4" type="video/mp4">
-Your browser does not support the video tag
-</video>
+![Coffee Machine Demo](./coffee_machine.gif)
 
 ## ⚙️ Logic Workflow
 **Check Resources:** When a user selects a drink, the machine first checks if it has enough water, milk, and coffee.
