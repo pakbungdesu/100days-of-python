@@ -12,7 +12,7 @@ Day 20: [Snake Game](https://github.com/pakbungdesu/100days-of-python/tree/maste
 
 Day 22: [Pong Game](https://github.com/pakbungdesu/100days-of-python/tree/master/Day22/Day22.md) - Left and right players, catch the ball before it hits the wall
 
-Day 24: [Turtle Crossing](https://github.com/pakbungdesu/100days-of-python/tree/master/Day24) - Help a cutie turtle to cross the road safely!
+Day 24: [Turtle Crossing](https://github.com/pakbungdesu/100days-of-python/tree/master/Day24/Day24.md) - Help a cutie turtle to cross the road safely!
 
 Day 25: [US Game](https://github.com/pakbungdesu/100days-of-python/tree/master/Day25) - Recall your memory, fill US state name on the map
 
