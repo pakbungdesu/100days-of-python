@@ -56,4 +56,4 @@ python main.py
 ```
 
 ## 👌🏼 Example Interaction
-
+![Pong Game Demo](./pong_game.gif)
