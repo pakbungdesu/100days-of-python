@@ -53,5 +53,5 @@ python main.py
 
 ## 👌🏼 Example Interaction
 
-![50 States Demo](./states.gif)
-![Winning](./winning.png)
+![50 States Demo](./states.gif){width=800 height=530}
+![Winning](./winning.png){width=800 height=530}
