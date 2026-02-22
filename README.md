@@ -14,7 +14,7 @@ Day 22: [Pong Game](https://github.com/pakbungdesu/100days-of-python/tree/master
 
 Day 24: [Turtle Crossing](https://github.com/pakbungdesu/100days-of-python/tree/master/Day24/Day24.md) - Help a cutie turtle to cross the road safely!
 
-Day 25: [US Game](https://github.com/pakbungdesu/100days-of-python/tree/master/Day25) - Recall your memory, fill US state name on the map
+Day 25: [US Game](https://github.com/pakbungdesu/100days-of-python/tree/master/Day25/Day25.md) - Recall your memory, fill US state name on the map
 
 Day 28: [Pomodoro](https://github.com/pakbungdesu/100days-of-python/tree/master/Day28) - Effective way to focus on your tasks, split it to small 25 minutes
 
